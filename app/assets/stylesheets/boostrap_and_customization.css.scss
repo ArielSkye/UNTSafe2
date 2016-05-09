@@ -1,0 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,300italic,500,500italic,400);
+
+$body-bg:      #ffffff; 
+$font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif;
+$navbar-default-bg: #2ecc71;
+$navbar-default-link-color:  #ffffff;
+
+@import 'bootstrap';
+
+.navbar-brand {
+	
+	font-weight: bold;
+}
+

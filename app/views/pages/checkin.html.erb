@@ -1,0 +1,44 @@
+<h1>Check in with your contact.</h1>
+
+<p>Before you travel at unsafe times, let your contact know where you're going so they can keep tabs on you for safety!</p>
+<p>Click "Check in" and we will send a text to your contact letting them know where you are. When you get to your destination, click "I've arrived" to let them know you're safe.</p>
+
+<hr>
+
+		<div class="center">
+			
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+			  Check in
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Check in with your contact.</h4>
+			      </div>
+			      <div class="modal-body">
+			     	FORM:
+			     	Contact: [autofill]
+			     	ETA: [select]
+			     	Message: [autofill]
+					
+			      </div>
+			      <div class="modal-footer">
+			        <%= link_to "Send SMS", :method => :send_text_message, class: "btn btn-success btn-lg btn-block" %>
+
+			        <br>
+			        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+		<br>
+		<div class="center">
+			<%= link_to "Update your contact", edit_user_registration_path, class: "btn btn-default btn-lg btn-block" %>
+		</div>
